@@ -4,8 +4,8 @@ import network # for connecting to Wi-Fi
 import urequests # for GET/POST requests to APIs
 import ssd1306 # for controlling the OLED screen
 
-SSID = "Pixel_9396"
-PASSWORD = "holdmynuts"
+SSID = "YOUR_SSID_HERE"
+PASSWORD = "YOUR_PASSWORD_HERE"
 URL = "http://worldtimeapi.org/api/ip" # gets time based off your IP address
 
 BUZZER_PIN = 26
