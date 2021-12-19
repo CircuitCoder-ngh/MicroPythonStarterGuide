@@ -13,7 +13,7 @@ msCounter = 0 # global variables must be defined before used in a function
 # using the same debouncing process for buttons, on the motion sensor,
 # allows for better control over how often the motion sensor
 # can be triggered
-def th(): 
+def th(timer): 
     global msCounter
     if msCounter == 0:
         msCounter += 1
