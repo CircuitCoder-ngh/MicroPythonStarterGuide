@@ -1,0 +1,12 @@
+# Build output
+site/
+
+# Python
+.venv/
+__pycache__/
+
+# Wi-Fi credentials - never commit these
+secrets.py
+
+# The original 51 MB PDF is kept locally only
+legacy/*.pdf

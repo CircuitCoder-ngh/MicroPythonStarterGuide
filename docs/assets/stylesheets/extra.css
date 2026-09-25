@@ -1,0 +1,151 @@
+/* CircuitCoder brand colours: near-black, electric blue, signal yellow */
+:root {
+  --cc-blue: #1a8fe6;
+  --cc-blue-bright: #2ea8ff;
+  --cc-yellow: #ffd23f;
+  --cc-ink: #0e1116;
+}
+
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color: var(--cc-ink);
+  --md-primary-fg-color--light: #1c222b;
+  --md-primary-fg-color--dark: #000;
+  --md-primary-bg-color: #fff;
+  --md-primary-bg-color--light: #ffffffb3;
+}
+
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color: var(--cc-blue);
+  --md-accent-fg-color--transparent: #1a8fe61a;
+}
+
+[data-md-color-scheme="default"] {
+  --md-typeset-a-color: var(--cc-blue);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #12161c;
+  --md-typeset-a-color: var(--cc-blue-bright);
+}
+
+.md-tabs {
+  background-color: var(--cc-ink);
+}
+
+/* ---------- Home page hero ---------- */
+.cc-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem 0 2.5rem;
+}
+
+.cc-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  color: var(--md-default-fg-color);
+}
+
+.cc-hero h1 span {
+  color: var(--cc-blue);
+}
+
+[data-md-color-scheme="slate"] .cc-hero h1 span {
+  color: var(--cc-yellow);
+}
+
+.cc-hero p {
+  font-size: 1.05rem;
+}
+
+.cc-hero img {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px #0003;
+}
+
+@media (max-width: 760px) {
+  .cc-hero {
+    grid-template-columns: 1fr;
+  }
+  .cc-hero h1 {
+    font-size: 1.9rem;
+  }
+}
+
+/* ---------- Component tiles ---------- */
+.cc-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 2rem;
+}
+
+.cc-tiles a {
+  display: block;
+  background: #000;
+  border-radius: 10px;
+  padding: 0.6rem 0.6rem 0.7rem;
+  text-align: center;
+  color: #fff !important;
+  font-size: 0.72rem;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cc-tiles a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px #0004;
+}
+
+.cc-tiles img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  margin-bottom: 0.3rem;
+}
+
+/* Component icon floated beside a page intro */
+.cc-icon {
+  float: right;
+  width: 120px;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .cc-icon {
+    width: 84px;
+  }
+}
+
+/* Photos and diagrams */
+.md-typeset img.cc-photo {
+  border-radius: 10px;
+}
+
+.cc-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+
+.cc-gallery img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* "Parts you'll need" lists */
+.md-typeset .cc-parts ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.md-typeset .cc-parts li {
+  margin-left: 0;
+}

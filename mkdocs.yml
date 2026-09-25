@@ -1,0 +1,110 @@
+site_name: CircuitCoder
+site_description: Learn electronics and programming by building real projects with an ESP32 and MicroPython.
+site_url: https://circuitcoder-ngh.github.io/MicroPythonStarterGuide/
+repo_url: https://github.com/CircuitCoder-ngh/MicroPythonStarterGuide
+repo_name: CircuitCoder on GitHub
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2021&ndash;2026 CircuitCoder
+
+theme:
+  name: material
+  logo: assets/img/logo.svg
+  favicon: assets/img/logo.svg
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.footer
+    - navigation.top
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.snippets:
+      base_path: [code]
+      check_paths: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - getting-started/index.md
+      - What You Need: getting-started/what-you-need.md
+      - Install Thonny & MicroPython: getting-started/setup.md
+      - Your First Program: getting-started/first-program.md
+      - Saving Programs to the Board: getting-started/saving-programs.md
+  - Python Basics:
+      - python/index.md
+      - Variables & Types: python/variables.md
+      - Lists & Dictionaries: python/lists-and-dicts.md
+      - If, For & While: python/control-flow.md
+      - Functions: python/functions.md
+  - Components:
+      - components/index.md
+      - LEDs: components/leds.md
+      - Buttons: components/buttons.md
+      - Potentiometers: components/potentiometers.md
+      - Piezo Buzzers: components/buzzers.md
+      - Servo Motors: components/servos.md
+      - OLED Screens: components/oled.md
+      - Motion Sensors: components/motion-sensors.md
+      - Wi-Fi & APIs: components/wifi.md
+  - Projects:
+      - projects/index.md
+      - Music Machine: projects/music-machine.md
+      - Servo Controller: projects/servo-controller.md
+      - Etch-a-Sketch: projects/etch-a-sketch.md
+      - Snake Game: projects/snake.md
+      - Fortune Teller: projects/fortune-teller.md
+      - Motion Alert: projects/motion-alert.md
+      - Alarm Clock: projects/alarm-clock.md
+  - Reference:
+      - reference/index.md
+      - ESP32 Pins: reference/esp32-pins.md
+      - Troubleshooting: reference/troubleshooting.md
+      - Command-Line Tools: reference/command-line.md
