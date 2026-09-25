@@ -41,6 +41,8 @@ lines above it tell you where (`line 12` and so on).
 | `ValueError: invalid pin` | That GPIO number can't be used for what you asked. See [ESP32 Pins](esp32-pins.md). |
 | `OSError: [Errno 19] ENODEV` (screen) | The ESP32 can't find the OLED. Check the SDA/SCL wires (21 and 22) and that VCC goes to 3V3. |
 | `OSError: -202` (Wi-Fi) | No internet connection, or the web address couldn't be found. Check Wi-Fi first. |
+| `OSError: [Errno 116] ETIMEDOUT` (DHT11) | The temperature sensor didn't answer. Check its wiring, and don't read it more than once a second. An occasional failed read is normal, which is why the lessons use `try`/`except`. |
+| `ValueError: invalid pin` with `TouchPad` | Only GPIO 0, 2, 4, 12, 13, 14, 15, 27, 32 and 33 can sense touch. |
 | `MemoryError` | The program ran out of memory. Close web responses with `response.close()` and avoid growing lists forever. |
 
 ## Circuits
@@ -75,6 +77,34 @@ lines above it tell you where (`line 12` and so on).
     If the Shell shows *Brownout detector was triggered*, the board isn't
     getting enough power, usually because a servo or other motor is drawing
     too much. Try another USB cable or port, or power the motor separately.
+
+## Robot
+
+??? question "The motors don't turn at all"
+    - Is the battery switch on, and are the batteries fresh? The ESP32 runs
+      from USB, so it can look fine even when the motor batteries are flat.
+    - The ESP32's GND, the DRV8833's GND and the battery's – wire must all be
+      connected. Without a **shared ground**, the driver can't understand the
+      ESP32's signals.
+    - If your DRV8833 module has an **EEP**, **SLP** or **STBY** pin, it must
+      be connected to 3V3, or the driver stays asleep.
+    - Very low speeds don't have enough power to get the motors moving. Try a
+      speed of at least 50.
+
+??? question "One wheel spins the wrong way"
+    Swap that motor's two wires where they connect to the DRV8833, or set
+    `LEFT_INVERT` or `RIGHT_INVERT` to `True` at the top of `robot.py`. See
+    [Build the Robot](../robot/build.md).
+
+??? question "The robot drives in a curve instead of straight"
+    No two motors are exactly alike. Use the `TRIM` setting described in
+    [First Drive](../robot/driving.md) to slow down the faster wheel.
+
+??? question "The distance sensor always says None, or jumps around"
+    - Soft, fuzzy or steeply angled surfaces absorb or deflect the sound.
+      Test with a flat book first.
+    - A classic 5 V HC-SR04 needs VIN for power, plus the voltage divider on
+      ECHO. See [Ultrasonic Sensors](../components/ultrasonic.md).
 
 ## Still stuck?
 

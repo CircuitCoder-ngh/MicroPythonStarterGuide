@@ -157,5 +157,5 @@ Combine what you've learned: every time the button on GPIO 14 is pressed,
 fetch the temperature and send it to your phone with ntfy. (No solution
 this time. You've got everything you need!)
 
-**Next up:** You've met every component. Time to build something with them:
-head to the [Projects](../projects/index.md).
+**Next up:** [RGB LEDs](rgb-led.md): mix any colour you like from red,
+green and blue.

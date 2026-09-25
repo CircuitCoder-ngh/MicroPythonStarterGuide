@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 144 80" width="432" height="240" role="img" aria-label="OLED showing indoor 22C 41% and outdoor 18C 63%">
+  <rect x="-8" y="-8" width="144" height="80" rx="6" fill="#1b4fa8"/>
+  <rect x="-2" y="-2" width="132" height="68" rx="2" fill="#050608"/>
+  <g fill="#e8f4ff" stroke="#e8f4ff" font-family="monospace" font-size="8">
+    <text x="4" y="7" stroke="none">Weather Station</text>
+    <line x1="0" y1="10.5" x2="128" y2="10.5" stroke-width="1"/>
+    <text x="4" y="23" stroke="none">Inside</text>
+    <text x="68" y="23" stroke="none">Outside</text>
+    <line x1="63.5" y1="14" x2="63.5" y2="64" stroke-width="1"/>
+    <text x="12" y="39" stroke="none">22C</text>
+    <text x="76" y="39" stroke="none">18C</text>
+    <text x="12" y="55" stroke="none">41%</text>
+    <text x="76" y="55" stroke="none">63%</text>
+  </g>
+</svg>

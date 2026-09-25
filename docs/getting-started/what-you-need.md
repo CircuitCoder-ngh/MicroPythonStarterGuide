@@ -21,7 +21,13 @@ try another cable first. Check whether your board has a **micro-USB** or
 
 ## The parts
 
-These are all the parts used across every lesson and project:
+The parts come in three groups, so you can start small and add more as you
+go.
+
+### Starter parts
+
+Everything you need for the first eight component lessons and the original
+projects.
 
 | Part | Qty | Used in |
 |---|:-:|---|
@@ -29,14 +35,44 @@ These are all the parts used across every lesson and project:
 | Solderless breadboard (830-hole) | 2 | Everything |
 | Jumper wires (male-to-male) | ~30 | Everything |
 | 5 mm LEDs | 2+ | LEDs, Motion Alert |
-| 220 Ω or 330 Ω resistors | 2+ | LEDs, Motion Alert |
+| 220 Ω or 330 Ω resistors | 5+ | LEDs, RGB LEDs, Motion Alert |
 | 6 mm tactile push buttons | 3 | Buttons and most projects |
 | 10 kΩ potentiometers | 2 | Potentiometers, Music Machine, Servo Controller, Etch-a-Sketch |
-| Passive piezo buzzer | 1 | Buzzers, Music Machine, Alarm Clock |
-| SG90 micro servo motor | 1 | Servos, Servo Controller, Fortune Teller |
-| SSD1306 0.96" OLED screen, 128×64, I2C (4 pins) | 1 | OLED, Etch-a-Sketch, Snake, Alarm Clock |
+| Passive piezo buzzer | 1 | Buzzers, Music Machine, Alarm Clock, and more |
+| SG90 micro servo motor | 1 | Servos, Servo Controller, Fortune Teller, Sonar Radar |
+| SSD1306 0.96" OLED screen, 128×64, I2C (4 pins) | 1 | OLED, Etch-a-Sketch, Snake, Alarm Clock, and more |
 | HC-SR501 PIR motion sensor | 1 | Motion Sensors, Motion Alert |
-| A Wi-Fi network (2.4 GHz) | – | Wi-Fi, Motion Alert, Alarm Clock |
+| A Wi-Fi network (2.4 GHz) | – | Wi-Fi, Motion Alert, Alarm Clock, Weather Station |
+
+### Sensors & lights
+
+Add these for the second set of lessons and their projects.
+
+| Part | Qty | Used in |
+|---|:-:|---|
+| RGB LED, 5 mm, common cathode | 1 | RGB LEDs, Parking Sensor |
+| Photoresistor (LDR, e.g. GL5528) | 1 | Light Sensors, Light Theremin, Night Light |
+| 10 kΩ resistors | 2+ | Light Sensors |
+| 1 kΩ and 2 kΩ resistors | 1 each | Only for a 5 V ultrasonic sensor |
+| DHT11 temperature & humidity module (3-pin) | 1 | Temperature & Humidity, Weather Station |
+| WS2812B NeoPixel ring or stick, 8 LEDs | 1 | NeoPixels, Night Light, Touch Piano |
+| HC-SR04P ultrasonic distance sensor (3.3 V version) | 1 | Ultrasonic Sensors, Parking Sensor, Sonar Radar, Robot |
+| Aluminium foil, coins or fruit | – | Touch Sensors, Touch Piano |
+
+### Robot parts
+
+Everything extra you need to build the [two-wheeled robot](../robot/index.md).
+The [robot's overview page](../robot/index.md) explains each part.
+
+| Part | Qty |
+|---|:-:|
+| 2WD robot car chassis kit (2 TT gear motors, wheels, caster, 4×AA holder with switch) | 1 |
+| DRV8833 dual motor driver module | 1 |
+| TCRT5000 line-tracking sensor modules | 2 |
+| Half-size breadboard | 1 |
+| Jumper wires (male-to-female) | ~10 |
+| AA batteries (rechargeable NiMH are fine) | 4 |
+| Small USB power bank and a short USB cable | 1 |
 
 !!! tip "Buzzer: passive, not active"
     Piezo buzzers come in two types. A **passive** buzzer can play any

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#000"/>
+  <g transform="translate(128 128) scale(0.82) translate(-128 -128)">
+  <circle cx="128" cy="128" r="84" fill="none" stroke="#1d1d1d" stroke-width="40"/>
+  <circle cx="128" cy="128" r="84" fill="none" stroke="#2b2b2b" stroke-width="34"/>
+  <g>
+    <circle cx="128" cy="44" r="16" fill="#ff3b3b"/>
+    <circle cx="187.4" cy="68.6" r="16" fill="#ff9a2e"/>
+    <circle cx="212" cy="128" r="16" fill="#ffe23f"/>
+    <circle cx="187.4" cy="187.4" r="16" fill="#3be86a"/>
+    <circle cx="128" cy="212" r="16" fill="#2ee0e0"/>
+    <circle cx="68.6" cy="187.4" r="16" fill="#2f7bff"/>
+    <circle cx="44" cy="128" r="16" fill="#8a4dff"/>
+    <circle cx="68.6" cy="68.6" r="16" fill="#ff4dd2"/>
+  </g>
+  <g fill="#fff" opacity="0.7">
+    <circle cx="124" cy="40" r="5"/><circle cx="183" cy="65" r="5"/><circle cx="208" cy="124" r="5"/><circle cx="183" cy="183" r="5"/>
+    <circle cx="124" cy="208" r="5"/><circle cx="65" cy="183" r="5"/><circle cx="40" cy="124" r="5"/><circle cx="65" cy="65" r="5"/>
+  </g>
+  </g>
+</svg>

@@ -94,15 +94,36 @@ nav:
       - OLED Screens: components/oled.md
       - Motion Sensors: components/motion-sensors.md
       - Wi-Fi & APIs: components/wifi.md
+      - RGB LEDs: components/rgb-led.md
+      - Light Sensors: components/light-sensors.md
+      - Temperature & Humidity: components/temperature.md
+      - Touch Sensors: components/touch.md
+      - NeoPixels: components/neopixels.md
+      - Ultrasonic Sensors: components/ultrasonic.md
   - Projects:
       - projects/index.md
       - Music Machine: projects/music-machine.md
+      - Light Theremin: projects/light-theremin.md
       - Servo Controller: projects/servo-controller.md
+      - Night Light: projects/night-light.md
       - Etch-a-Sketch: projects/etch-a-sketch.md
+      - Touch Piano: projects/touch-piano.md
+      - Parking Sensor: projects/parking-sensor.md
+      - Weather Station: projects/weather-station.md
       - Snake Game: projects/snake.md
       - Fortune Teller: projects/fortune-teller.md
+      - Sonar Radar: projects/sonar-radar.md
       - Motion Alert: projects/motion-alert.md
       - Alarm Clock: projects/alarm-clock.md
+  - Robot:
+      - robot/index.md
+      - DC Motors: robot/dc-motors.md
+      - Line Sensors: robot/line-sensors.md
+      - Build the Robot: robot/build.md
+      - First Drive: robot/driving.md
+      - Obstacle Avoider: robot/obstacle-avoider.md
+      - Line Follower: robot/line-follower.md
+      - Wi-Fi Remote Control: robot/remote-control.md
   - Reference:
       - reference/index.md
       - ESP32 Pins: reference/esp32-pins.md

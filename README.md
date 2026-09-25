@@ -13,7 +13,8 @@ pings your phone, and more.
 |---|---|
 | `code/lessons/` | Short example for each component lesson |
 | `code/projects/` | Full project programs; save one to your board as `main.py` |
-| `code/lib/` | Library files to copy onto your board: `button.py`, `wifi.py`, `ssd1306.py`, and `secrets_example.py` (copy it as `secrets.py`) |
+| `code/robot/` | Programs for the two-wheeled robot: motor tests, driving, obstacle avoider, line follower, Wi-Fi remote control |
+| `code/lib/` | Library files to copy onto your board: `button.py`, `distance.py`, `robot.py`, `wifi.py`, `ssd1306.py`, and `secrets_example.py` (copy it as `secrets.py`) |
 | `docs/` | The website source (Markdown, built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)) |
 | `tools/` | `check_code.py`, a CI check that catches syntax errors and outdated MicroPython APIs |
 | `legacy/` | The original 2021 edition, kept for reference |

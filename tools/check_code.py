@@ -17,7 +17,6 @@ OUTDATED = [
     (r"\.duty\(", "use duty_u16() or duty_ns() instead of the legacy duty()"),
     (r"\.width\(", "ADC.width() is legacy; use read_u16()"),
     (r"\bADC\.WIDTH_", "ADC widths are legacy; use read_u16()"),
-    (r"\.read\(\)\s*(#.*)?$", "ADC.read() is legacy; use read_u16()"),
     (r"\burequests\b", "import requests instead of urequests"),
     (r"\bSTA_IF\b|\bAP_IF\b", "use network.WLAN.IF_STA"),
     (r"\.ifconfig\(", "use wlan.ipconfig('addr4')"),
@@ -44,7 +43,14 @@ def main():
             continue
         if path.name in SKIP:
             continue
+        # ADC.read() is legacy, but TouchPad.read() is current, so only flag
+        # .read() on variables that were created from ADC(...)
+        adc_names = set(re.findall(r"(\w+)\s*=\s*(?:machine\.)?ADC\(", source))
         for lineno, line in enumerate(source.splitlines(), 1):
+            for name in adc_names:
+                if re.search(r"\b" + name + r"\.read\(\)", line):
+                    print(f"{rel}:{lineno}: ADC.read() is legacy; use read_u16()\n    {line.strip()}")
+                    problems += 1
             for pattern, reason in OUTDATED:
                 if re.search(pattern, line):
                     print(f"{rel}:{lineno}: {reason}\n    {line.strip()}")

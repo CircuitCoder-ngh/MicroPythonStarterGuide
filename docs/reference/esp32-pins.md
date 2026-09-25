@@ -44,6 +44,34 @@ parts plugged in as you move from one lesson to the next.
 | OLED SDA | 21 | I2C data. |
 | OLED SCL | 22 | I2C clock. |
 | Motion sensor (PIR) output | 33 | Power from VIN, ground to GND. |
+| RGB LED red / green / blue | 16 / 17 / 18 | Each through a 220 Ω resistor. Common leg to GND. |
+| Light sensor (photoresistor) | 36 | With a 10 kΩ resistor to GND. Often labelled **VP**. |
+| Temperature & humidity (DHT11) | 19 | Power from 3V3. |
+| NeoPixels (data in) | 23 | Power from VIN (5 V). |
+| Ultrasonic sensor TRIG | 5 | |
+| Ultrasonic sensor ECHO | 39 | Often labelled **VN**. Needs a voltage divider if the sensor runs on 5 V. |
+| Touch pads | 4 and 15 | Just a wire, a coin or some foil. |
+
+!!! note "Projects that break the plan"
+    The [Touch Piano](../projects/touch-piano.md) needs seven touch-capable
+    pins, so it borrows some from the plan above. Its page tells you which
+    parts to unplug first.
+
+## The robot's pin plan
+
+The [robot](../robot/index.md) is a separate build, so it reuses some of the
+pins above for its motors and line sensors.
+
+| Part | GPIO | Notes |
+|---|---|---|
+| Left motor (DRV8833 AIN1 / AIN2) | 16 / 17 | |
+| Right motor (DRV8833 BIN1 / BIN2) | 18 / 19 | |
+| Ultrasonic sensor TRIG / ECHO | 5 / 39 | Same as the desk plan. |
+| Left line sensor | 34 | |
+| Right line sensor | 35 | |
+| Servo (scanning head, optional) | 13 | Same as the desk plan. |
+| Buzzer | 26 | Same as the desk plan. |
+| Start button (Button A) | 14 | Same as the desk plan. |
 
 ## Every GPIO at a glance
 

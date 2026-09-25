@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 144 80" width="432" height="240" role="img" aria-label="OLED radar display with range rings, a sweep line and echo dots">
+  <rect x="-8" y="-8" width="144" height="80" rx="6" fill="#1b4fa8"/>
+  <rect x="-2" y="-2" width="132" height="68" rx="2" fill="#050608"/>
+  <g fill="#e8f4ff" stroke="#e8f4ff" font-family="monospace" font-size="8">
+    <path d="M 44 63 A 20 20 0 0 1 84 63" fill="none" stroke-width="0.6" stroke-dasharray="1 2.5"/>
+    <path d="M 24 63 A 40 40 0 0 1 104 63" fill="none" stroke-width="0.6" stroke-dasharray="1 2.5"/>
+    <path d="M 4 63 A 60 60 0 0 1 124 63" fill="none" stroke-width="0.6" stroke-dasharray="1 2.5"/>
+    <line x1="4" y1="63.5" x2="124" y2="63.5" stroke-width="1"/>
+    <line x1="64" y1="63" x2="34.0" y2="11.0" stroke-width="1"/>
+    <rect x="87.8" y="40.3" width="3" height="3" stroke="none"/>
+    <rect x="86.2" y="39.4" width="3" height="3" stroke="none"/>
+    <rect x="85.0" y="38.2" width="3" height="3" stroke="none"/>
+    <rect x="84.1" y="36.6" width="3" height="3" stroke="none"/>
+    <rect x="60.9" y="43.6" width="3" height="3" stroke="none"/>
+    <rect x="60.1" y="44.3" width="3" height="3" stroke="none"/>
+    <rect x="59.1" y="43.8" width="3" height="3" stroke="none"/>
+    <rect x="20.9" y="37.5" width="3" height="3" stroke="none"/>
+    <rect x="19.2" y="39.4" width="3" height="3" stroke="none"/>
+    <text x="0" y="7" stroke="none">30cm</text>
+  </g>
+</svg>

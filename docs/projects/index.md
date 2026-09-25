@@ -22,6 +22,14 @@ the wiring, a plan, the full code and ideas for making it your own.
 
     ⭐ · Button, Potentiometer, Buzzer
 
+-   ![Light sensor icon](../assets/img/icons/light-sensor.svg){ .cc-photo loading=lazy }
+
+    **[Light Theremin](light-theremin.md)**
+
+    Wave your hand over a light sensor to play spooky theremin music.
+
+    ⭐ · Light Sensor, Buzzer, Button
+
 -   ![Servo Controller with a potentiometer](../assets/img/photos/servo-pot-2.jpg){ .cc-photo loading=lazy }
 
     **[Servo Controller](servo-controller.md)**
@@ -30,6 +38,14 @@ the wiring, a plan, the full code and ideas for making it your own.
 
     ⭐ · Servo, Potentiometer, Buttons
 
+-   ![NeoPixel ring icon](../assets/img/icons/neopixel.svg){ .cc-photo loading=lazy }
+
+    **[Night Light](night-light.md)**
+
+    A colour-changing lamp that switches itself on when the room gets dark.
+
+    ⭐⭐ · NeoPixels, Light Sensor, Touch
+
 -   ![Etch-a-Sketch drawing on an OLED screen](../assets/img/photos/etch-a-sketch.jpg){ .cc-photo loading=lazy }
 
     **[Etch-a-Sketch](etch-a-sketch.md)**
@@ -37,6 +53,30 @@ the wiring, a plan, the full code and ideas for making it your own.
     Two dials, one screen: build your own digital drawing toy.
 
     ⭐⭐ · OLED, 2 Potentiometers, 2 Buttons
+
+-   ![Touch sensor icon](../assets/img/icons/touch.svg){ .cc-photo loading=lazy }
+
+    **[Touch Piano](touch-piano.md)**
+
+    Turn foil, coins or bananas into piano keys with the ESP32's touch pins.
+
+    ⭐⭐ · Touch, Buzzer, NeoPixels (optional)
+
+-   ![Ultrasonic sensor icon](../assets/img/icons/ultrasonic.svg){ .cc-photo loading=lazy }
+
+    **[Parking Sensor](parking-sensor.md)**
+
+    Beeps faster and glows redder as something gets closer, just like a car.
+
+    ⭐⭐ · Ultrasonic, RGB LED, Buzzer
+
+-   ![Weather Station screen](../assets/img/diagrams/p-weather-station.svg){ .cc-photo loading=lazy }
+
+    **[Weather Station](weather-station.md)**
+
+    Compare the temperature inside with the weather outside, live from the internet.
+
+    ⭐⭐⭐ · Temperature, OLED, Button, Wi-Fi
 
 -   ![Snake game running on an OLED screen](../assets/img/photos/snake-1.jpg){ .cc-photo loading=lazy }
 
@@ -53,6 +93,14 @@ the wiring, a plan, the full code and ideas for making it your own.
     Ask a question, press the button, and let the spinning pointer decide your fate.
 
     ⭐⭐ · Servo, Button, Buzzer (optional)
+
+-   ![Sonar Radar screen](../assets/img/diagrams/p-sonar-radar.svg){ .cc-photo loading=lazy }
+
+    **[Sonar Radar](sonar-radar.md)**
+
+    A servo sweeps an ultrasonic sensor and the OLED draws what it sees.
+
+    ⭐⭐⭐ · Servo, Ultrasonic, OLED
 
 -   ![Motion sensor alarm on a breadboard](../assets/img/photos/motion-alert.jpg){ .cc-photo loading=lazy }
 
@@ -71,3 +119,11 @@ the wiring, a plan, the full code and ideas for making it your own.
     ⭐⭐⭐ · OLED, 3 Buttons, Buzzer, Wi-Fi
 
 </div>
+
+## Next: build a robot
+
+Finished the projects? The [Robot](../robot/index.md) section puts
+everything together in a two-wheeled robot that drives, dodges obstacles,
+follows lines and takes orders from your phone.
+
+[Meet the robot :material-arrow-right:](../robot/index.md){ .md-button .md-button--primary }

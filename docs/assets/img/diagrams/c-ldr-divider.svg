@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" font-family="Inter, Arial, sans-serif" font-size="15">
+  <rect x="2" y="2" width="356" height="296" rx="14" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+  <g stroke="#1b2430" stroke-width="3" fill="none" stroke-linecap="round">
+    <!-- 3V3 rail to LDR -->
+    <line x1="120" y1="40" x2="120" y2="70"/>
+    <!-- LDR body -->
+    <rect x="100" y="70" width="40" height="70" rx="20" fill="#f3d9bf"/>
+    <path d="M108 84h24M108 96h24M108 108h24M108 120h24" stroke="#b45d16" stroke-width="2.5"/>
+    <!-- light arrows -->
+    <path d="M58 72l28 16M58 96l28 16" stroke="#e0a800"/>
+    <path d="M86 88l-10-1 4-8M86 112l-10-1 4-8" stroke="#e0a800"/>
+    <!-- junction -->
+    <line x1="120" y1="140" x2="120" y2="188"/>
+    <line x1="120" y1="164" x2="230" y2="164"/>
+    <!-- resistor -->
+    <rect x="106" y="188" width="28" height="60" rx="4" fill="#f1e7c8"/>
+    <line x1="106" y1="206" x2="134" y2="206" stroke="#a0522d" stroke-width="4"/>
+    <line x1="106" y1="218" x2="134" y2="218" stroke="#111" stroke-width="4"/>
+    <line x1="106" y1="230" x2="134" y2="230" stroke="#e08a00" stroke-width="4"/>
+    <line x1="120" y1="248" x2="120" y2="266"/>
+  </g>
+  <circle cx="120" cy="164" r="6" fill="#1b2430"/>
+  <!-- labels -->
+  <text x="120" y="32" text-anchor="middle" font-weight="700" fill="#c0392b">3V3</text>
+  <text x="150" y="110" fill="#1b2430">Photoresistor</text>
+  <text x="150" y="128" fill="#5b6572" font-size="13">(less light → more Ω)</text>
+  <rect x="230" y="148" width="110" height="32" rx="6" fill="#1a8fe6"/>
+  <text x="285" y="169" text-anchor="middle" font-weight="700" fill="#fff">GPIO 36</text>
+  <text x="146" y="224" fill="#1b2430">10 kΩ resistor</text>
+  <text x="120" y="288" text-anchor="middle" font-weight="700" fill="#1b2430">GND</text>
+  <line x1="98" y1="268" x2="142" y2="268" stroke="#1b2430" stroke-width="3"/>
+  <line x1="106" y1="275" x2="134" y2="275" stroke="#1b2430" stroke-width="3"/>
+</svg>
